@@ -1,0 +1,16 @@
+* {
+  font-family: Impact, "Dela Gothic One", Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.highlight {
+  color: red;
+}
+
+html {
+  min-width: 105vh;
+  min-height: 105vh;
+  background-image: linear-gradient(0deg, rgb(76, 76, 196), rgb(177, 255, 177));
+  overflow-x: hidden;
+}

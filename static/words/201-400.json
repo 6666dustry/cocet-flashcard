@@ -1,0 +1,1037 @@
+{
+  "words": [
+    {
+      "word": "pound",
+      "translation": "ポンド、重さ、打撃、叩く、打つ",
+      "class": "名詞、動詞",
+      "example": [
+        "The weight of the package was about 10 pounds.(その荷物の重さは約10ポンドでした。)",
+        "He pounded on the door until someone answered.(彼は誰かが答えるまでドアをノックし続けた。)"
+      ]
+    },
+    {
+      "word": "hectare",
+      "translation": "ヘクタール",
+      "class": "名詞",
+      "example": [
+        "This farm is about 50 hectares in size.(この農場の広さは約50ヘクタールです。)",
+        "The land is worth $10,000 per hectare.(その土地はヘクタール当たり1万ドルの価値があります。)"
+      ]
+    },
+    {
+      "word": "nut",
+      "translation": "ナット、木の実、ナッツ",
+      "class": "名詞",
+      "example": [
+        "The nut was too tight to turn by hand.(そのナットは手で回すにはきつすぎました。)",
+        "I like to snack on mixed nuts.(私はミックスナッツをつまみ食いするのが好きです。)"
+      ]
+    },
+    {
+      "word": "bolt",
+      "translation": "ボルト、脱走する、一目ぼれする",
+      "class": "名詞、動詞",
+      "example": [
+        "He tightened the bolt with a wrench.(彼はレンチでボルトを締めました。)",
+        "The horse bolted when it heard the gunshot.(馬は銃声を聞くと逃げ出した。)"
+      ]
+    },
+    {
+      "word": "cable",
+      "translation": "ケーブル、電線、ケーブルカー、ケーブルテレビ",
+      "class": "名詞",
+      "example": [
+        "I need to connect my computer to the internet with a cable.(私はコンピュータをケーブルでインターネットに接続する必要があります。)",
+        "We rode the cable car up the mountain.(私たちはケーブルカーで山を登りました。)"
+      ]
+    },
+    {
+      "word": "greenhouse",
+      "translation": "温室",
+      "class": "名詞",
+      "example": [
+        "The farmer grows tomatoes in the greenhouse.(その農家は温室でトマトを栽培しています。)",
+        "We bought a small greenhouse for our garden.(私たちは庭に小さな温室を買いました。)"
+      ]
+    },
+    {
+      "word": "vegetable",
+      "translation": "野菜、植物",
+      "class": "名詞",
+      "example": [
+        "My mother told me to eat more vegetables for a healthier diet.(健康的な食生活のために、母は私にもっと野菜を食べるように言いました。)",
+        "The botanist is studying a new species of vegetable.(植物学者は新しい種の野菜を研究しています。)"
+      ]
+    },
+    {
+      "word": "meat",
+      "translation": "肉、肉類",
+      "class": "名詞",
+      "example": [
+        "I don't eat meat very often because I prefer vegetables.(私は野菜が好きなので、あまり肉を食べません。)",
+        "The restaurant serves a variety of meats, including beef, pork, and chicken.(そのレストランでは、牛肉、豚肉、鶏肉などの様々な肉料理が提供されています。)"
+      ]
+    },
+    {
+      "word": "smoke",
+      "translation": "煙、喫煙する、煙る",
+      "class": "名詞、動詞",
+      "example": [
+        "The smoke from the fire was visible for miles.(火災から上がる煙は、数マイル先からでも見えました。)",
+        "He smokes two packs of cigarettes a day.(彼は1日にタバコを2箱吸います。)"
+      ]
+    },
+    {
+      "word": "wind",
+      "translation": "風、巻く、うねる",
+      "class": "名詞、動詞",
+      "example": [
+        "The wind is blowing hard today.(今日は風が強く吹いています。)",
+        "He wound the string around the spool.(彼は糸をスプールに巻きました。)"
+      ]
+    },
+    {
+      "word": "fan",
+      "translation": "扇風機、ファン、ファンを使う、応援する",
+      "class": "名詞、動詞",
+      "example": [
+        "It's too hot in here, can you turn on the fan?(ここは暑すぎるので、扇風機をつけてくれますか？)",
+        "She's a big fan of his music.(彼女は彼の音楽の大ファンです。)"
+      ]
+    },
+    {
+      "word": "noise",
+      "translation": "騒音、雑音、音、騒々しさ",
+      "class": "名詞",
+      "example": [
+        "I couldn't sleep because of the noise outside.(外の騒音のせいで、私は眠れませんでした。)",
+        "He turned up the volume to drown out the noise of the traffic.(彼は交通の騒音を消すために、音量を上げました。)"
+      ]
+    },
+    {
+      "word": "tone",
+      "translation": "音色、調子、トーン",
+      "class": "名詞",
+      "example": [
+        "I like the tone of his voice.(彼の声のトーンが好きだ。)",
+        "The tone of the painting is very dark.(その絵の調子はとても暗い。)"
+      ]
+    },
+    {
+      "word": "radar",
+      "translation": "レーダー",
+      "class": "名詞",
+      "example": [
+        "The radar detected the airplane.(レーダーが飛行機を検知した。)",
+        "The ship was equipped with a powerful radar system.(その船には強力なレーダーシステムが装備されていた。)"
+      ]
+    },
+    {
+      "word": "antenna",
+      "translation": "アンテナ、触角",
+      "class": "名詞",
+      "example": [
+        "The TV antenna is on the roof.(テレビのアンテナは屋根の上にある。)",
+        "The car has a satellite antenna.(その車には衛星アンテナが付いている。)"
+      ]
+    },
+    {
+      "word": "mine",
+      "translation": "鉱山、地雷、爆弾",
+      "class": "名詞、動詞",
+      "example": [
+        "He works at a coal mine.(彼は炭鉱で働いている。)",
+        "The soldiers had to be careful of mines on the battlefield.(兵士たちは戦場で地雷に注意しなければならなかった。)"
+      ]
+    },
+    {
+      "word": "coal",
+      "translation": "石炭",
+      "class": "名詞",
+      "example": [
+        "Many power plants use coal as fuel.(多くの発電所が石炭を燃料として使用している。)",
+        "The coal mine is located in the mountain.(その炭鉱は山の中にある。)"
+      ]
+    },
+    {
+      "word": "tar",
+      "translation": "タール",
+      "class": "名詞、動詞",
+      "example": [
+        "The road was covered in tar.(道路はタールで覆われていた。)",
+        "The winner was tarred and feathered.(勝者はタールと羽毛で塗りつぶされた。注釈:タール羽の刑のことです)"
+      ]
+    },
+    {
+      "word": "mirror",
+      "translation": "鏡、反射する",
+      "class": "名詞、動詞",
+      "example": [
+        "I saw my reflection in the mirror.(鏡の中に自分の姿を見た。)",
+        "The sun was mirrored in the calm lake.(穏やかな湖面に太陽が映っていた。)"
+      ]
+    },
+    {
+      "word": "prize",
+      "translation": "賞、褒美、高値",
+      "class": "名詞、動詞",
+      "example": [
+        "She won first prize in the piano competition.(彼女はピアノコンクールで一等賞を獲得した。)",
+        "I would prize your advice on this matter.(あなたのその問題に関する助言は貴重に思います。)"
+      ]
+    },
+    {
+      "word": "mistake",
+      "translation": "誤り、過ち、誤解、間違える",
+      "class": "名詞、動詞",
+      "example": [
+        "I made a mistake on the test.(試験で間違いをした。)",
+        "Please don't mistake my kindness for weakness.(私の優しさを弱さと勘違いしないでください。)"
+      ]
+    },
+    {
+      "word": "sense",
+      "translation": "意味、感覚、分別、理解する",
+      "class": "名詞、動詞",
+      "example": [
+        "He has a good sense of humor.(彼はユーモアのセンスがある。)",
+        "I sense that something is wrong.(何かがおかしいと感じる。)"
+      ]
+    },
+    {
+      "word": "rhythm",
+      "translation": "リズム、韻律、規則性",
+      "class": "名詞",
+      "example": [
+        "The rhythm of the music is very catchy.(音楽のリズムはとてもキャッチーだ。)",
+        "The poem has a nice rhythm.(その詩には素晴らしいリズムがある。)"
+      ]
+    },
+    {
+      "word": "accent",
+      "translation": "アクセント、なまり、重視する",
+      "class": "名詞、動詞",
+      "example": [
+        "He speaks English with a French accent.(彼は英語をフランス語訛りで話す。)",
+        "The teacher accented the importance of studying for the test.(先生は試験勉強の重要性を強調した。)"
+      ]
+    },
+    {
+      "word": "balance",
+      "translation": "バランス、均衡、つり合い、均衡を保つ",
+      "class": "名詞、動詞",
+      "example": [
+        "A good balance of work and play is important.(仕事と遊びのバランスが良いことは重要だ。)",
+        "She balanced the tray of drinks carefully.(彼女は慎重に飲み物のトレーをバランスよく持ちました。)"
+      ]
+    },
+    {
+      "word": "diet",
+      "translation": "ダイエット、食事、日常の食習慣",
+      "class": "名詞、動詞",
+      "example": [
+        "I need to go on a diet.(私はダイエットをしなければならない。)",
+        "Her diet consists mainly of fruits and vegetables.(彼女の食事は主に果物と野菜から成り立っています。)"
+      ]
+    },
+    {
+      "word": "tail",
+      "translation": "しっぽ、尾、後部、末尾、最後尾、尾を追いかける",
+      "class": "名詞、動詞",
+      "example": [
+        "The cat has a long tail.(その猫は長いしっぽを持っています。)",
+        "We were tailing the suspect.(私たちは犯人を尾行していた。)"
+      ]
+    },
+    {
+      "word": "bug",
+      "translation": "虫、昆虫、不具合、欠陥",
+      "class": "名詞、動詞",
+      "example": [
+        "There's a bug in the system.(そのシステムに不具合がある。)",
+        "I caught a bug and I've been feeling sick.(私は風邪を引いて具合が悪い。)"
+      ]
+    },
+    {
+      "word": "wax",
+      "translation": "ろう、ワックス、蝋、ろう状のもの",
+      "class": "名詞、動詞",
+      "example": [
+        "He waxed his surfboard before hitting the waves.(彼は波に乗る前にサーフボードにワックスを塗った。)",
+        "The moon is waxing.(月が満ちている。)"
+      ]
+    },
+    {
+      "word": "active",
+      "translation": "活動的な、積極的な、活発な、能動的な",
+      "class": "形容詞、名詞",
+      "example": [
+        "I like to stay active by going to the gym.(私はジムに行って活発に過ごすのが好きだ。)",
+        "The volcano is still active.(その火山はまだ活動中です。)"
+      ]
+    },
+    {
+      "word": "human",
+      "translation": "人間、人間の、人類",
+      "class": "名詞、形容詞",
+      "example": [
+        "Humans have been on earth for thousands of years.(人類は何千年もの間、地球上に存在してきました。)",
+        "We need to remember that humans are just one part of the larger ecosystem.(人間は大きな生態系の一部であることを忘れてはいけません。)"
+      ]
+    },
+    {
+      "word": "physical",
+      "translation": "物理的な、肉体的な",
+      "class": "形容詞",
+      "example": [
+        "Exercise is important for physical health.(運動は身体的健康にとって重要です。)",
+        "Physical labor can be very tiring.(肉体労働は非常に疲れることがあります。)"
+      ]
+    },
+    {
+      "word": "mental",
+      "translation": "精神的な、知的な",
+      "class": "形容詞",
+      "example": [
+        "She has been under a lot of mental stress lately.(彼女は最近、精神的なストレスを抱えています。)",
+        "The game requires a lot of mental focus and strategy.(このゲームは、精神的な集中力と戦略が必要です。)"
+      ]
+    },
+    {
+      "word": "smart",
+      "translation": "頭の良い、賢い、スマートな",
+      "class": "形容詞",
+      "example": [
+        "He is a very smart student.(彼は非常に賢い学生です。)",
+        "She always wears smart and stylish clothes to work.(彼女はいつも職場にスマートでおしゃれな服装で来ます。)"
+      ]
+    },
+    {
+      "word": "twin",
+      "translation": "双子、双生児",
+      "class": "名詞",
+      "example": [
+        "They are identical twins.(彼らは一卵性双生児です。)",
+        "My sister and I are fraternal twins.(私と姉は異性双生児です。)"
+      ]
+    },
+    {
+      "word": "perfect",
+      "translation": "完璧な、完全な",
+      "class": "形容詞",
+      "example": [
+        "The weather is perfect for a picnic.(ピクニックには天気が最適です。)",
+        "She has a perfect score on the test.(彼女はテストで完全なスコアを取得しました。)"
+      ]
+    },
+    {
+      "word": "regular",
+      "translation": "規則的な、定期的な、正規の",
+      "class": "形容詞",
+      "example": [
+        "He's a regular customer at the store.(彼はその店の常連だ。)",
+        "Our team has a regular meeting every Monday.(私たちのチームは毎週月曜に定例のミーティングを持っている。)"
+      ]
+    },
+    {
+      "word": "local",
+      "translation": "地元の、近くの、地方の、現地の",
+      "class": "形容詞",
+      "example": [
+        "We always buy our produce from the local farmer's market.(私たちはいつも地元の農産物市場で買い物をする。)",
+        "The local police department is investigating the crime.(現地の警察署がその事件を捜査している。)"
+      ]
+    },
+    {
+      "word": "solar",
+      "translation": "太陽の、太陽光の",
+      "class": "形容詞",
+      "example": [
+        "Solar energy is a clean and renewable source of power.(太陽光エネルギーはクリーンで再生可能なエネルギー源だ。)",
+        "The solar system consists of the sun and the planets that orbit around it.(太陽系は、太陽とその周りを公転する惑星から成り立っている。)"
+      ]
+    },
+    {
+      "word": "wild",
+      "translation": "野生の、荒野の、未開拓の、乱暴な",
+      "class": "形容詞",
+      "example": [
+        "We saw a wild bear on our camping trip.(キャンプ旅行で野生のクマを見た。)",
+        "The Amazon rainforest is home to many wild animals.(アマゾンの熱帯雨林は多くの野生動物の住処だ。)"
+      ]
+    },
+    {
+      "word": "natural",
+      "translation": "自然の、当然の、本来備わっている",
+      "class": "形容詞",
+      "example": [
+        "It's natural for children to be curious.(子供が好奇心を持つのは当然のことだ。)",
+        "Eating natural foods is good for your health.(自然食品を食べることは健康に良い。)"
+      ]
+    },
+    {
+      "word": "virtual",
+      "translation": "バーチャルの、仮想の、事実上の",
+      "class": "形容詞",
+      "example": [
+        "We attended a virtual conference on the internet.(私たちはインターネット上でバーチャルな会議に参加した。)",
+        "I've been working with the company for six months, but I've only met my coworkers in virtual meetings.(私は会社で6ヶ月間働いているが、同僚とはバーチャルミーティングでしか会ったことがない。)"
+      ]
+    },
+    {
+      "word": "unique",
+      "translation": "唯一の、独特の",
+      "class": "形容詞",
+      "example": [
+        "Each person's fingerprints are unique.(各人の指紋は独特です。)",
+        "The restaurant has a unique atmosphere.(そのレストランには独特の雰囲気がある。)"
+      ]
+    },
+    {
+      "word": "stupid",
+      "translation": "馬鹿な、愚かな",
+      "class": "形容詞",
+      "example": [
+        "That was a stupid mistake.(あれは馬鹿なミスだった。)",
+        "I feel stupid for forgetting my keys.(鍵を忘れていてバカだったと感じる。)"
+      ]
+    },
+    {
+      "word": "spare",
+      "translation": "余分な、予備の、時間のある、惜しまない、節約する",
+      "class": "形容詞、動詞",
+      "example": [
+        "We have a spare room if you need it.(必要であれば余分な部屋があります。)",
+        "I always carry a spare battery with me.(いつも予備のバッテリーを持ち歩いています。)",
+        "Could you spare a few minutes to talk?(話すために少しの時間を取っていただけますか？)"
+      ]
+    },
+    {
+      "word": "sharp",
+      "translation": "鋭い、辛辣な、正確な、急な、くっきりした",
+      "class": "形容詞",
+      "example": [
+        "Be careful of the sharp knife.(鋭いナイフに注意して。)",
+        "Her words were sharp and hurtful.(彼女の言葉は鋭くて傷つけられた。)",
+        "The clock struck twelve sharp.(時計は正確に12時を打った。)"
+      ]
+    },
+    {
+      "word": "straight",
+      "translation": "まっすぐな、正直な、坦々とした",
+      "class": "形容詞、副詞",
+      "example": [
+        "The road ahead is straight.(前方の道はまっすぐです。)",
+        "She's always been straight with me.(彼女はいつも私に正直だった。)",
+        "I told him straight that I didn't like his behavior.(彼のふるまいが好きではないと正直に言った。)"
+      ]
+    },
+    {
+      "word": "direct",
+      "translation": "直接の、率直な、直接に導く、指図する",
+      "class": "形容詞、動詞",
+      "example": [
+        "I have direct contact with the manager.(私は経理と直接やりとりをしている。)",
+        "Let me be direct: I don't think your plan will work.(はっきり言おう、あなたの計画はうまくいかないと思う。)",
+        "She directed us to the nearest gas station.(彼女は私たちを最寄りのガソリンスタンドへ案内した。)"
+      ]
+    },
+    {
+      "word": "activity",
+      "translation": "活動、行動、アクティビティ",
+      "class": "名詞",
+      "example": [
+        "Physical activity is good for your health.(運動は健康に良いです。)",
+        "We need to plan some team-building activities.(チームビルディングのための活動を計画する必要があります。)"
+      ]
+    },
+    {
+      "word": "direction",
+      "translation": "方向、指示、指導",
+      "class": "名詞",
+      "example": [
+        "Can you give me directions to the nearest gas station?(最寄りのガソリンスタンドまでの道順を教えてくれますか？)",
+        "He provided direction for the project.(彼はそのプロジェクトについて指示を与えました。)"
+      ]
+    },
+    {
+      "word": "curve",
+      "translation": "曲線、曲がる、曲げる",
+      "class": "名詞、動詞",
+      "example": [
+        "The road ahead has a dangerous curve.(前方には危険なカーブがあります。)",
+        "The river curves around the mountain.(川は山を回り込んで流れている。)"
+      ]
+    },
+    {
+      "word": "peak",
+      "translation": "ピーク、頂点、山の頂上",
+      "class": "名詞、動詞",
+      "example": [
+        "The stock market reached a new peak.(株式市場は新しい高値を記録した。)",
+        "The mountain peak was covered in snow.(山頂は雪で覆われていた。)"
+      ]
+    },
+    {
+      "word": "graph",
+      "translation": "グラフ、図表、グラフにする",
+      "class": "名詞、動詞",
+      "example": [
+        "The graph shows the relationship between temperature and humidity.(グラフは温度と湿度の関係を示しています。)",
+        "We need to graph the data before we can analyze it.(データを分析する前にグラフにする必要があります。)"
+      ]
+    },
+    {
+      "word": "bubble",
+      "translation": "泡、気泡、バブル",
+      "class": "名詞、動詞",
+      "example": [
+        "She blew a bubble with her gum.(彼女はガムで泡を吹いた。)",
+        "The housing market is in a bubble.(住宅市場はバブル状態にある。)"
+      ]
+    },
+    {
+      "word": "economy",
+      "translation": "経済、節約",
+      "class": "名詞",
+      "example": [
+        "The economy is expected to grow by 2% next year.(来年、経済が2%成長すると予想されています。)",
+        "We should try to make an economy in our daily life.(私たちは日々の生活で節約するように努めるべきです。)"
+      ]
+    },
+    {
+      "word": "item",
+      "translation": "項目、品目、物品、記事",
+      "class": "名詞",
+      "example": [
+        "You can choose up to three items from the menu.(メニューから3つまでの品目を選べます。)",
+        "This item was reported in the news yesterday.(この記事は昨日のニュースで報じられました。)"
+      ]
+    },
+    {
+      "word": "lens",
+      "translation": "レンズ、レンズ状のもの",
+      "class": "名詞",
+      "example": [
+        "I need to get my glasses with new lenses.(新しいレンズのついた眼鏡を取りに行かなくてはならない。)",
+        "The lens of the camera is dirty.(カメラのレンズが汚れています。)"
+      ]
+    },
+    {
+      "word": "web",
+      "translation": "ウェブ、蜘蛛の巣状のもの",
+      "class": "名詞",
+      "example": [
+        "I found the information on the web.(私はその情報をウェブ上で見つけました。)",
+        "The spider's web was beautifully woven.(クモの巣は美しく織り上げられていました。)"
+      ]
+    },
+    {
+      "word": "score",
+      "translation": "得点、楽譜、得点する、評価する",
+      "class": "名詞、動詞",
+      "example": [
+        "What's the score of the game now?(今、試合のスコアはどうなっていますか？)",
+        "The movie received a high score from the critics.(その映画は評論家から高い評価を受けました。)"
+      ]
+    },
+    {
+      "word": "wheel",
+      "translation": "車輪、ハンドル、舵、輪",
+      "class": "名詞",
+      "example": [
+        "I need to replace the wheels on my bike.(私は自転車の車輪を交換する必要があります。)",
+        "The steering wheel of the car was shaking.(車のハンドルが揺れていました。)"
+      ]
+    },
+    {
+      "word": "request",
+      "translation": "要請、依頼、申請、依頼する、要請する",
+      "class": "名詞、動詞",
+      "example": [
+        "I have a request for you.(あなたに頼みごとがあります。)",
+        "She requested a day off.(彼女は休暇を申請した。)"
+      ]
+    },
+    {
+      "word": "salt",
+      "translation": "塩",
+      "class": "名詞",
+      "example": [
+        "Too much salt is bad for your health.(塩分摂り過ぎは健康に悪いです。)",
+        "Add a pinch of salt to the soup.(スープに塩を少々加えてください。)"
+      ]
+    },
+    {
+      "word": "calcium",
+      "translation": "カルシウム",
+      "class": "名詞",
+      "example": [
+        "Calcium is an essential mineral for building and maintaining strong bones.(カルシウムは、強い骨を構築・維持するために必要な栄養素です。)",
+        "You can get calcium from dairy products.(乳製品からカルシウムを摂取することができます。)"
+      ]
+    },
+    {
+      "word": "bag",
+      "translation": "かばん、袋",
+      "class": "名詞",
+      "example": [
+        "She always carries a bag with her.(彼女はいつもバッグを持ち歩いています。)",
+        "Please put the apples in the bag.(リンゴを袋に入れてください。)"
+      ]
+    },
+    {
+      "word": "umbrella",
+      "translation": "傘",
+      "class": "名詞",
+      "example": [
+        "Don't forget to bring an umbrella.(傘を持ってくるのを忘れないでください。)",
+        "It's raining, so I need to use my umbrella.(雨が降っているので、傘を使わなければなりません。)"
+      ]
+    },
+    {
+      "word": "typhoon",
+      "translation": "台風",
+      "class": "名詞",
+      "example": [
+        "The typhoon caused massive damage to the city.(台風が市内に壊滅的な被害をもたらした。)",
+        "The typhoon warning has been issued for the next three days.(台風警報が次の3日間発令されました。)"
+      ]
+    },
+    {
+      "word": "crater",
+      "translation": "クレーター、火口、落とし穴",
+      "class": "名詞",
+      "example": [
+        "The moon is full of craters.(月はクレーターだらけだ。)",
+        "The volcano's crater is still active.(その火山の火口はまだ活動中だ。)"
+      ]
+    },
+    {
+      "word": "command",
+      "translation": "命令、命令する、指揮、支配する",
+      "class": "名詞、動詞",
+      "example": [
+        "The commander gave the command to attack.(司令官は攻撃の命令を下した。)",
+        "He commands a large army.(彼は大軍団を指揮している。)"
+      ]
+    },
+    {
+      "word": "seat",
+      "translation": "座席、席、着席させる、（権利などを）持つ",
+      "class": "名詞、動詞",
+      "example": [
+        "Please take your seat.(席に着いてください。)",
+        "Japan has a permanent seat on the United Nations Security Council.(日本は常任理事国の一員です。)"
+      ]
+    },
+    {
+      "word": "grade",
+      "translation": "成績、等級、成績をつける、等級分けする",
+      "class": "名詞、動詞",
+      "example": [
+        "I got an A grade on my math test.(私は数学の試験でAの成績を取った。)",
+        "The road has a steep grade.(その道路は急勾配だ。)"
+      ]
+    },
+    {
+      "word": "loop",
+      "translation": "ループ、輪、ループする、（糸などを）輪にする",
+      "class": "名詞、動詞",
+      "example": [
+        "The program has a loop that repeats the same action.(そのプログラムには同じアクションを繰り返すループがあります。)",
+        "I looped the string around my finger.(私は糸を指に輪っかにした。)"
+      ]
+    },
+    {
+      "word": "dot",
+      "translation": "点、ドット",
+      "class": "名詞",
+      "example": [
+        "The teacher put a red dot on my paper.(先生は私のペーパーに赤い点をつけました。)"
+      ]
+    },
+    {
+      "word": "volunteer",
+      "translation": "ボランティア、志願者、自発的な、自発的にする",
+      "class": "名詞、動詞、形容詞",
+      "example": [
+        "She is a volunteer at the hospital.(彼女は病院でボランティアをしています。)",
+        "I volunteered to help with the charity event.(私はそのチャリティイベントの手伝いを自発的に申し出ました。)"
+      ]
+    },
+    {
+      "word": "shift",
+      "translation": "交代、変える、シフト、変化、移す",
+      "class": "名詞、動詞",
+      "example": [
+        "I work the morning shift at the coffee shop.(私はコーヒーショップで朝のシフトを担当しています。)",
+        "We need to shift our focus to the new project.(私たちは新しいプロジェクトに焦点を移す必要があります。)"
+      ]
+    },
+    {
+      "word": "shake",
+      "translation": "振る、揺れる、揺り動かす、揺れ、動揺",
+      "class": "動詞",
+      "example": [
+        "I like to shake my head to music.(私は音楽に合わせて頭を振るのが好きです。)",
+        "The earthquake shook the entire city.(地震で街全体が揺れた。)"
+      ]
+    },
+    {
+      "word": "plug",
+      "translation": "栓、プラグ、差し込む、栓をする",
+      "class": "名詞、動詞",
+      "example": [
+        "The sink is clogged with hair, can you remove the plug?(シンクに髪の毛が詰まっているんですが、プラグを取っていただけますか？)",
+        "I need to plug in my phone to charge it.(私は電話を充電するためにプラグを挿す必要があります。)"
+      ]
+    },
+    {
+      "word": "seal",
+      "translation": "印章、シール、密封する",
+      "class": "名詞、動詞",
+      "example": [
+        "The letter was protected by a wax seal.(その手紙はロウで封がされていました。)",
+        "Please seal the package with tape.(テープでパッケージを密封してください。)"
+      ]
+    },
+    {
+      "word": "swing",
+      "translation": "揺れる、揺らす、スイング、振り子、揺れ、変動",
+      "class": "動詞、名詞",
+      "example": [
+        "The branches of the trees swing in the wind.(木々の枝は風に揺れる。)",
+        "The child loves to swing on the swing set in the park.(子供は公園のブランコで揺れるのが好きです。)"
+      ]
+    },
+    {
+      "word": "spin",
+      "translation": "回す、回転する、まわる、紡ぐ、スピン、回転",
+      "class": "動詞、名詞",
+      "example": [
+        "The Earth spins on its axis.(地球は自転している。)",
+        "The skater did a spin on the ice.(スケーターは氷の上でスピンをした。)"
+      ]
+    },
+    {
+      "word": "cancel",
+      "translation": "キャンセルする、中止する、打ち消す、削除する、取り消し",
+      "class": "名詞、動詞",
+      "example": [
+        "I need to cancel my reservation.(予約をキャンセルしなければならない。)",
+        "The meeting was cancelled due to bad weather.(悪天候のため、会議が中止になりました。)"
+      ]
+    },
+    {
+      "word": "slice",
+      "translation": "薄切りにする、切り分ける、スライス、薄い一切れ",
+      "class": "動詞、名詞",
+      "example": [
+        "Could you slice the bread for me, please?(パンを薄く切ってもらえますか？)",
+        "I had a slice of pizza for lunch.(昼食にピザの一切れを食べました。)"
+      ]
+    },
+    {
+      "word": "rank",
+      "translation": "位置づける、位置する、ランク、地位、格付け",
+      "class": "動詞、名詞",
+      "example": [
+        "He ranks among the best players in the league.(彼はリーグのトッププレイヤーの中にランクインしている。)",
+        "She achieved a high rank in the company.(彼女は会社で高い地位を獲得しました。)"
+      ]
+    },
+    {
+      "word": "rescue",
+      "translation": "救う、救助、救出",
+      "class": "動詞、名詞",
+      "example": [
+        "The firefighter rescued the cat from the tree.(消防士はネコを木から救出した。)",
+        "The rescue operation was successful.(救助作戦は成功しました。)"
+      ]
+    },
+    {
+      "word": "recover",
+      "translation": "回復する、取り戻す、回収する",
+      "class": "動詞",
+      "example": [
+        "I hope you recover soon from your illness.(病気が早く良くなることを願っています。)",
+        "Police have recovered the stolen jewelry.(警察は盗まれた宝石を回収しました。)"
+      ]
+    },
+    {
+      "word": "hurry",
+      "translation": "急ぐ、早くする、急ぎ、急ぐこと",
+      "class": "動詞、名詞",
+      "example": [
+        "We must hurry if we want to catch the train.(列車に乗りたければ急がなければならない。)",
+        "I'm in a hurry to finish this work.(この仕事を終えるのが急いでいる。)"
+      ]
+    },
+    {
+      "word": "hate",
+      "translation": "憎む、嫌う、嫌悪",
+      "class": "動詞、名詞",
+      "example": [
+        "I really hate getting up early.(早起きすることは本当に嫌いだ。)",
+        "He has a deep hate for his ex-wife.(彼は元妻を激しく憎んでいる。)"
+      ]
+    },
+    {
+      "word": "envy",
+      "translation": "羨む、妬む、うらやむ、ねたみ、しっと",
+      "class": "動詞、名詞",
+      "example": [
+        "I envy people who can speak many languages.(多言語を話せる人を羨ましく思う。)",
+        "He looked at the expensive car with envy.(彼は高価な車を羨ましそうに見た。)"
+      ]
+    },
+    {
+      "word": "lose",
+      "translation": "失う、なくす、負ける",
+      "class": "動詞",
+      "example": [
+        "I lost my keys.(鍵をなくしてしまった。)",
+        "I don't want to lose this game.(この試合に負けたくない。)"
+      ]
+    },
+    {
+      "word": "win",
+      "translation": "勝つ、獲得する、当てる",
+      "class": "動詞",
+      "example": [
+        "I hope our team wins the game.(私たちのチームが試合に勝つことを願っています。)",
+        "She won the first prize in the competition.(彼女は競技で一等賞を獲得した。)"
+      ]
+    },
+    {
+      "word": "echo",
+      "translation": "エコー、反響、こだま、反響する",
+      "class": "名詞、動詞",
+      "example": [
+        "Her voice echoed in the empty room.(彼女の声が空っぽの部屋にこだました。)",
+        "The sound of the gunshot echoed through the valley.(銃声が谷に響き渡った。)"
+      ]
+    },
+    {
+      "word": "powder",
+      "translation": "粉、パウダー、粉末、粉にする",
+      "class": "名詞、動詞",
+      "example": [
+        "I use a powder to keep my skin dry.(私は肌を乾燥させるためにパウダーを使います。)",
+        "She powdered her face before going on stage.(彼女は舞台に上がる前に顔に粉をふりました。)"
+      ]
+    },
+    {
+      "word": "rubber",
+      "translation": "ゴム、消しゴム",
+      "class": "名詞",
+      "example": [
+        "The rubber on the sole of his shoe was worn out.(彼の靴の底のゴムがすり減っていた。)",
+        "I need a rubber to erase my mistake.(私は失敗を消すために消しゴムが必要です。)"
+      ]
+    },
+    {
+      "word": "vitamin",
+      "translation": "ビタミン",
+      "class": "名詞",
+      "example": [
+        "Oranges are rich in vitamin C.(オレンジはビタミンCが豊富です。)",
+        "It's important to get enough vitamin D from sunlight.(十分なビタミンDを日光から取ることは重要です。)"
+      ]
+    },
+    {
+      "word": "button",
+      "translation": "ボタン、つまみ",
+      "class": "名詞、動詞",
+      "example": [
+        "Please press the button to start the elevator.(エレベーターを動かすためにボタンを押してください。)",
+        "She buttoned up her coat before going outside.(彼女は外に出る前にコートをボタンを留めました。)"
+      ]
+    },
+    {
+      "word": "workshop",
+      "translation": "ワークショップ、工場、研修会",
+      "class": "名詞",
+      "example": [
+        "I attended a writing workshop last weekend.(私は先週末にライティングの研修会に出席しました。)",
+        "He works at a car repair workshop.(彼は自動車修理工場で働いています。)"
+      ]
+    },
+    {
+      "word": "pan",
+      "translation": "パン、フライパン、片耳鍋、皿",
+      "class": "名詞",
+      "example": [
+        "I usually cook eggs in a pan for breakfast.(私は普段朝食に卵をフライパンで焼きます。)",
+        "I need to buy a new pan.(新しい片耳鍋が必要です。)"
+      ]
+    },
+    {
+      "word": "stove",
+      "translation": "コンロ、ストーブ",
+      "class": "名詞",
+      "example": [
+        "I'm going to cook dinner on the stove.(夕食はコンロで作るつもりです。)",
+        "It's cold in here, let's turn on the stove.(ここは寒いので、ストーブをつけましょう。)"
+      ]
+    },
+    {
+      "word": "foil",
+      "translation": "アルミホイル、箔、剥片",
+      "class": "名詞",
+      "example": [
+        "Wrap the sandwiches in foil before putting them in the lunch box.(ランチボックスに入れる前にサンドイッチをアルミホイルで包みます。)",
+        "I learned about the principle of reflection using a foil mirror.(箔鏡を使って反射の原理を学びました。)"
+      ]
+    },
+    {
+      "word": "soap",
+      "translation": "石鹸、洗剤",
+      "class": "名詞",
+      "example": [
+        "I prefer using bar soap over liquid soap.(私は液体石鹸よりもバー石鹸を使うのが好きです。)",
+        "This soap is perfect for sensitive skin.(この石鹸は敏感肌にぴったりです。)"
+      ]
+    },
+    {
+      "word": "cork",
+      "translation": "コルク、コルク栓",
+      "class": "名詞",
+      "example": [
+        "I bought a bottle of wine with a cork.(私はコルク栓のワインボトルを買いました。)",
+        "The cork on this bottle is stuck.(このボトルのコルクが詰まっています。)"
+      ]
+    },
+    {
+      "word": "curtain",
+      "translation": "カーテン、幕、仕切り",
+      "class": "名詞",
+      "example": [
+        "I need to wash the curtains in the living room.(リビングルームのカーテンを洗わなければなりません。)",
+        "The stage curtain slowly opened to reveal the performers.(舞台のカーテンがゆっくりと開き、出演者が現れました。)"
+      ]
+    },
+    {
+      "word": "wool",
+      "translation": "羊毛",
+      "class": "名詞",
+      "example": [
+        "The sweater is made of wool.(そのセーターは羊毛でできている。)",
+        "Sheep's wool is often used for making clothes.(羊毛は服を作るのによく使われる。)"
+      ]
+    },
+    {
+      "word": "stick",
+      "translation": "棒、棍棒、棒状のもの、固定する、くっつける",
+      "class": "名詞、動詞",
+      "example": [
+        "He used a stick to hit the ball.(彼はボールを打つために棒を使った。)",
+        "I need to stick the papers together.(私はその紙をくっつける必要がある。)"
+      ]
+    },
+    {
+      "word": "tray",
+      "translation": "盆、トレー、受け皿",
+      "class": "名詞",
+      "example": [
+        "Please bring me a tray for the tea.(紅茶用のトレーを取ってきて。)",
+        "The waiter brought a tray with our order.(ウェイターが私たちの注文をのせたトレーを持ってきた。)"
+      ]
+    },
+    {
+      "word": "ceremony",
+      "translation": "儀式、式典、セレモニー",
+      "class": "名詞",
+      "example": [
+        "The wedding ceremony was held at a church.(結婚式の式典は教会で行われた。)",
+        "The award ceremony was held last night.(昨晩は表彰式が行われました。)"
+      ]
+    },
+    {
+      "word": "hall",
+      "translation": "ホール、講堂、大広間、廊下",
+      "class": "名詞",
+      "example": [
+        "The concert was held in a big hall.(コンサートは大きなホールで行われた。)",
+        "The school hall is used for assemblies and events.(学校の講堂は集会や行事に使われる。)"
+      ]
+    },
+    {
+      "word": "whole",
+      "translation": "全体の、全部の、完全な、全体",
+      "class": "形容詞、名詞",
+      "example": [
+        "The whole family went on vacation.(家族全員が休暇に行った。)",
+        "She ate the whole pizza by herself.(彼女は一人でその全てのピザを食べた。)"
+      ]
+    },
+    {
+      "word": "sticky",
+      "translation": "粘着性のある、とろけるような、しつこい",
+      "class": "形容詞",
+      "example": [
+        "This glue is very sticky.(この接着剤はとても粘着性がある。)",
+        "That candy is too sticky for me.(あのキャンディーは私には甘すぎてしつこい。)"
+      ]
+    },
+    {
+      "word": "typical",
+      "translation": "典型的な、代表的な、特有の",
+      "class": "形容詞",
+      "example": [
+        "This is a typical example of bad customer service.(これは顧客サービスの悪い典型的な例です。)",
+        "His response was typical of someone who doesn't care.(彼の反応は、無関心な人の典型的なものだった。)"
+      ]
+    },
+    {
+      "word": "extra",
+      "translation": "余分な、追加の、特別の",
+      "class": "形容詞、副詞、名詞",
+      "example": [
+        "I need some extra time to finish the project.(私はプロジェクトを終えるために余分な時間が必要です。)",
+        "Can you add some extra sugar to my coffee?(コーヒーにもう少し砂糖を加えてもらえますか？)",
+        "I got paid extra for working on a holiday.(私は休日出勤した分、追加で支払いを受けました。)"
+      ]
+    },
+    {
+      "word": "round",
+      "translation": "丸い、円形の、ラウンドの、丸める、回る",
+      "class": "形容詞、副詞、動詞、名詞",
+      "example": [
+        "The moon looks round from the earth.(月は地球から丸く見えます。)",
+        "The pizza is round.(ピザは丸いです。)",
+        "We did a round of introductions before starting the meeting.(会議を始める前に自己紹介を1回しました。)",
+        "Please round off the corners of the paper.(紙の角を丸くしてください。)",
+        "The Earth spins around its axis once in 24 hours, which we call a day.(地球は24時間かけて1回自転し、これを1日と呼んでいます。)"
+      ]
+    },
+    {
+      "word": "empty",
+      "translation": "空の、空いている、空っぽの、欠けている",
+      "class": "形容詞",
+      "example": [
+        "The room was empty.(その部屋は空っぽだった。)",
+        "My stomach is empty.(私のおなかはすいています。)"
+      ]
+    },
+    {
+      "word": "expensive",
+      "translation": "高価な、値の張る",
+      "class": "形容詞",
+      "example": [
+        "This watch is very expensive.(この時計はとても高価です。)",
+        "Eating out can be expensive.(外食は高くつくことがある。)"
+      ]
+    },
+    {
+      "word": "cheap",
+      "translation": "安い、手頃な値段の、粗悪な",
+      "class": "形容詞",
+      "example": [
+        "I found a really cheap apartment.(とても安いアパートを見つけた。)",
+        "Don't buy that cheap product.(あの安物製品は買わない方がいい。)"
+      ]
+    }
+  ]
+}
