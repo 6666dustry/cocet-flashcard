@@ -8,7 +8,7 @@
 <slot />
 <footer>
 	<p><a target="_blank" href="https://otologic.jp/">効果音:OtoLogic</a></p>
-	<p id="version">version:1.00</p>
+	<p id="version">version:1.0.0</p>
 </footer>
 
 <style>
