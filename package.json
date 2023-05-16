@@ -1,6 +1,6 @@
 {
 	"name": "cocet",
-	"version": "0.0.1",
+	"version": "1.00",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
