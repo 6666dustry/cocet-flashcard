@@ -1,21 +1,19 @@
 <script lang="ts">
 	import { onDestroy } from 'svelte';
-	import { words as to200 } from '../../static/words/1-200.json';
-	import { readable } from 'svelte/store';
+	import { words } from './words';
 	let min = 1,
 		max = 200,
 		prev: [min: number, max: number] = [min, max];
 	const division = 200;
-	let setter: (value: Word[]) => void;
-	export const currentWords = readable(to200 as Word[], (set) => {
-		setter = set;
-	});
 	let loaded = true;
+	let wordsLength = 200;
 	async function load() {
+		wordsLength = 200;
 		try {
 			let load = await import(`../../static/words/${min}-${max}.json`);
 			loaded = true;
-			setter(load.words);
+			wordsLength = load.words.length;
+			words.set(load.words);
 			return true;
 		} catch (error) {
 			loaded = false;
@@ -69,7 +67,7 @@
 >
 	<!-- svelte-ignore a11y-click-events-have-key-events-->
 	<span class="left" on:click={minus} />
-	{min}-{max}
+	{min}-{Math.min(max, min + wordsLength)}
 	<!-- svelte-ignore a11y-click-events-have-key-events-->
 	<span class="right" on:click={plus} />
 </div>

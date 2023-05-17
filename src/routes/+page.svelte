@@ -4,10 +4,9 @@
 	import { fly, scale } from 'svelte/transition';
 	import { onDestroy, onMount } from 'svelte';
 	import Config from '$lib/Config.svelte';
+	import { getQuestion, words } from '$lib/words.js';
 	const delay = 500;
-
-	let getRandomWord = () => [{ word: 'loading', translation: 'ローディング' }, 0] as [Word, number];
-	let currentWord = getRandomWord()[0];
+	let currentWord = getQuestion()[0];
 	let currentIndex = 0;
 	let startTime = 0;
 	let missCount = 0;
@@ -17,13 +16,16 @@
 	const startGame = () => {
 		currentIndex = 0;
 		startTime = Date.now();
-		currentWord = getRandomWord()[0];
+		currentWord = getQuestion()[0];
+		missCount = 0;
 	};
+	words.subscribe(() => {
+		startGame();
+	});
 
 	const endGame = () => {
 		const elapsedTime = Date.now() - startTime;
 		perKey = Math.ceil((currentWord.word.length / (elapsedTime / 1000)) * 100) / 100;
-		missCount = 0;
 		speak(currentWord.word);
 		playSound(true);
 	};
@@ -54,7 +56,7 @@
 		document.removeEventListener('keydown', call);
 	});
 	onMount(() => {
-		currentWord = getRandomWord()[0];
+		currentWord = getQuestion()[0];
 	});
 </script>
 
@@ -75,7 +77,7 @@
 		</p>
 	{/key}
 </div>
-<Config bind:getQuestion={getRandomWord} />
+<Config />
 
 <style>
 	p {
