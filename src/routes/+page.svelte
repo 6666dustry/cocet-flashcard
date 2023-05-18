@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { playSound } from '../lib/sounds.js';
+	import { playSound } from '$lib/sounds.js';
 	import speak from '../lib/utils/speak.js';
 	import { fly, scale } from 'svelte/transition';
-	import { onDestroy, onMount } from 'svelte';
+	import { onMount } from 'svelte';
 	import Config from '$lib/Config.svelte';
 	import { getQuestion, words } from '$lib/words.js';
 	const delay = 500;
