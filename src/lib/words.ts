@@ -1,10 +1,10 @@
 import { writable } from 'svelte/store';
-import { words as to200 } from '../../static/words/1-200.json';
+import { words as to200 } from '../assets/words/1-200.json';
 let results: Word[] = [];
 let index = 0;
 export const words = writable(to200);
 words.subscribe((words) => {
-	results = words;
+	results = shuffle(words);
 	index = 0;
 });
 export function shuffle<T extends unknown[]>(array: T): T {
