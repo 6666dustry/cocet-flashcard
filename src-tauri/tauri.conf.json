@@ -7,7 +7,7 @@
     "distDir": "../build"
   },
   "package": {
-    "productName": "cocet",
+    "productName": "cocet-flash-card",
     "version": "1.0.1"
   },
   "tauri": {
@@ -33,7 +33,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "cocet",
+      "identifier": "cocet-flash-card",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -43,7 +43,7 @@
         "signingIdentity": null
       },
       "resources": [
-        "../static/words/*"
+        "../src/assets/**"
       ],
       "shortDescription": "",
       "targets": "all",
@@ -64,7 +64,7 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "cocet",
+        "title": "cocet-flash-card",
         "width": 800
       }
     ]

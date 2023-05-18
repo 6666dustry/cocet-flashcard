@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { onDestroy } from 'svelte';
 	import { words } from './words';
 	let min = 1,
 		max = 200,
@@ -10,7 +9,7 @@
 	async function load() {
 		wordsLength = 200;
 		try {
-			let load = await import(`../../static/words/${min}-${max}.json`);
+			let load = await import(`../assets/words/${min}-${max}.json`);
 			loaded = true;
 			wordsLength = load.words.length;
 			words.set(load.words);
