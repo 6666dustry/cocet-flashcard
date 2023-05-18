@@ -48,12 +48,9 @@
 			plus();
 		}
 	};
-	document.addEventListener('keydown', shortcut);
-	onDestroy(() => {
-		document.removeEventListener('keydown', shortcut);
-	});
 </script>
 
+<svelte:window on:keydown={shortcut} />
 <div
 	class:error={!loaded}
 	on:keydown={(k) => {

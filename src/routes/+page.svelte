@@ -51,15 +51,12 @@
 		const key = event.key.toLowerCase();
 		handleInput(key);
 	};
-	document.addEventListener('keydown', call);
-	onDestroy(() => {
-		document.removeEventListener('keydown', call);
-	});
 	onMount(() => {
 		currentWord = getQuestion()[0];
 	});
 </script>
 
+<svelte:window on:keydown={call} />
 <div>
 	<p id="time">
 		{perKey}{' '}key/s {missCount}
