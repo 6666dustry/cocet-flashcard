@@ -12,7 +12,7 @@
 			let load = await import(`../assets/words/${min}-${max}.json`);
 			loaded = true;
 			wordsLength = load.words.length;
-			words.set(load.words);
+			$words = load.words;
 			return true;
 		} catch (error) {
 			loaded = false;

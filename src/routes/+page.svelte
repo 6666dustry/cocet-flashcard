@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { playSound } from '$lib/sounds.js';
-	import speak from '../lib/utils/speak.js';
+	import speak from '$lib/utils/speak.js';
 	import { fly, scale } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	import Config from '$lib/Config.svelte';

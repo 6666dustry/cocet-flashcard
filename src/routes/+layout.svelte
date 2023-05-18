@@ -1,6 +1,5 @@
 <script>
 	import '../common.css';
-	import Config from '../lib/Config.svelte';
 	let text = Math.random() < 0.2 ? 'cocet flash card' : 'COCET FLASH CARD';
 </script>
 
