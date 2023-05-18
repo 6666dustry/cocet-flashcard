@@ -23,6 +23,3 @@ Svelteって楽しいね(=
 効果音:[OtoLogic](https://otologic.jp/)
 
 フォント:[Dela Gothic One (Google fonts)](https://fonts.google.com/specimen/Dela+Gothic+One)
-
-### バージョン:
-1.0.1
