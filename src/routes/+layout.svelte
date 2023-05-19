@@ -1,14 +1,36 @@
 <script lang="ts">
-	import { mode, modes } from '../lib/modes.js';
+	import { mode, modes, links } from '../lib/modes.js';
+	import { goto } from '$app/navigation';
 	import '../common.css';
-	let text = Math.random() < 0.1 ? $mode.toLowerCase() : $mode;
+	let text: string;
+	$: text = Math.random() < 0.1 ? modes[$mode].toLowerCase() : modes[$mode];
 	let version = '1.0.2';
 </script>
 
 <header>
-	<span class="top" />
+	<!-- svelte-ignore a11y-click-events-have-key-events-->
+	<span
+		class:none={!($mode >= 1)}
+		class="top"
+		on:click={() => {
+			if ($mode >= 1) {
+				$mode--;
+				goto(links[$mode]);
+			}
+		}}
+	/>
 	<h1>{text}</h1>
-	<span class="bottom" />
+	<!-- svelte-ignore a11y-click-events-have-key-events-->
+	<span
+		class:none={!(links.length > $mode + 1)}
+		class="bottom"
+		on:click={() => {
+			if (links.length > $mode + 1) {
+				$mode++;
+				goto(links[$mode]);
+			}
+		}}
+	/>
 </header>
 
 <slot />
@@ -49,5 +71,11 @@
 	}
 	.bottom {
 		border-top-color: black;
+	}
+	.none.top {
+		border-bottom-color: gray;
+	}
+	.none.bottom {
+		border-top-color: gray;
 	}
 </style>

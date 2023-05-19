@@ -1,5 +1,4 @@
-import { writable, type Writable } from "svelte/store";
-type valueOf<T> = T[T[keyof T] extends number ? keyof T : never];
+import { writable } from "svelte/store";
 export const modes: [
   cocet: "COCET FLASH CARD",
   colorCode: "COLOR CODE FLASH CARD",
@@ -9,4 +8,13 @@ export const modes: [
     "COLOR CODE FLASH CARD",
     "ELEMENT SYMBOL FLASH CARD",
   ];
-export const mode: Writable<valueOf<typeof modes>> = writable("COCET FLASH CARD");
+export const links = [
+  "/",
+  "/colorcode",
+  "/elementsymbol",
+];
+
+export const mode = writable(0);
+mode.subscribe((value) => {
+  console.log(value);
+});

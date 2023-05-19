@@ -57,6 +57,18 @@
 </script>
 
 <svelte:window on:keydown={call} />
+<svelte:head>
+	<style>
+		html {
+			background-image: linear-gradient(0deg, rgb(76, 76, 196), rgb(177, 255, 177));
+		}
+		* {
+			font-family: Impact, 'Dela Gothic One', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+			text-align: center;
+			font-size: xx-large;
+		}
+	</style>
+</svelte:head>
 <div>
 	<p id="time">
 		{perKey}{' '}key/s {missCount}
@@ -77,14 +89,6 @@
 <Words />
 
 <style>
-	:global(html) {
-		background-image: linear-gradient(0deg, rgb(76, 76, 196), rgb(177, 255, 177));
-	}
-	:global(*) {
-		font-family: Impact, 'Dela Gothic One', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-		text-align: center;
-		font-size: xx-large;
-	}
 	p {
 		font-size: 40px;
 	}
