@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { words } from './words';
+	import { words } from './words.js';
 	import 'svelte/easing';
 	let min = 1,
 		max = 200;
