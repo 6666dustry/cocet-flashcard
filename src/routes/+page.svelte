@@ -3,8 +3,8 @@
 	import speak from '$lib/utils/speak.js';
 	import { fly, scale } from 'svelte/transition';
 	import { onMount } from 'svelte';
-	import Config from '$lib/Config.svelte';
-	import { getQuestion, words } from '$lib/words.js';
+	import Words from './Words.svelte';
+	import { getQuestion, words } from './words.js';
 	const delay = 500;
 	let currentWord = getQuestion()[0];
 	let currentIndex = 0;
@@ -74,9 +74,17 @@
 		</p>
 	{/key}
 </div>
-<Config />
+<Words />
 
 <style>
+	:global(html) {
+		background-image: linear-gradient(0deg, rgb(76, 76, 196), rgb(177, 255, 177));
+	}
+	:global(*) {
+		font-family: Impact, 'Dela Gothic One', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		text-align: center;
+		font-size: xx-large;
+	}
 	p {
 		font-size: 40px;
 	}
