@@ -13,6 +13,8 @@ const codes = {
   gold: [null, null, 1e-2, 10],
   none: [null, null, null, 20]
 };
+const hasOne=code.keys();
+const hasTwo=code.keys();
 const hasFour = ["brown", "red", "silver", "gold", "none"];
 export function makeCode() {
 
