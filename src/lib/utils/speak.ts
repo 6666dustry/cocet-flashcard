@@ -1,6 +1,7 @@
 //しゃべるのさ！
 export default function speak(word: string) {
   const uttr = new SpeechSynthesisUtterance(word);
+  console.log(speechSynthesis.getVoices());
 
   // 言語を設定
   uttr.lang = "en-US";
@@ -16,5 +17,5 @@ export default function speak(word: string) {
 
   window.speechSynthesis.cancel();
   // 発言を再生 (必須)
-  //window.speechSynthesis.speak(uttr);
+  window.speechSynthesis.speak(uttr);
 }
