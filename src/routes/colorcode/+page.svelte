@@ -6,6 +6,7 @@
 	let section: HTMLElement;
 	let numbers = [NaN, NaN, NaN];
 	let index = 0;
+	let minus = false;
 	function ifNaN(v: number) {
 		return isNaN(v) ? '□' : v.toString();
 	}
@@ -17,13 +18,22 @@
 			if (index >= 3) {
 				index = 2;
 			}
-			numbers[index++] = Number(v.key);
+			numbers[index++] = minus ? -Number(v.key) : Number(v.key);
+			minus = false;
+		}
+		if (v.key === '-') {
+			minus = true;
 		}
 		if (!(index <= 0) && v.key === 'Backspace') {
 			numbers[--index] = NaN;
 		}
 		if ((numbers[0] * 10 + numbers[1]) * 10 ** numbers[2] === value) {
 			playSound(true);
+			setTimeout(() => {
+				({ colors, value, values } = makeCode());
+				numbers = [NaN, NaN, NaN];
+				index = 0;
+			}, 500);
 			section.animate(
 				[
 					{
@@ -47,11 +57,6 @@
 				],
 				{ duration: 500, easing: 'ease' }
 			);
-			setTimeout(() => {
-				({ colors, value, values } = makeCode());
-				numbers = [NaN, NaN, NaN];
-				index = 0;
-			}, 500);
 		} else {
 			if (!isNaN(numbers[0]) && !isNaN(numbers[1]) && !isNaN(numbers[2])) {
 				playSound(false);
@@ -59,21 +64,29 @@
 		}
 	}}
 />
-<div id="line" />
+<div id="line">
+	<span id="title"
+		>{['COOL CODE', 'COLOR CODE', 'カラーコード', 'RESISTANCE', 'TEIKOU', 'COROL CDOE'][
+			Math.floor(Math.random() * 6)
+		]}</span
+	>
+</div>
 <section bind:this={section}>
-	<div />
-	<div id="resister">
-		<span class="code" />
-		<span class="code" style="background-color:{colors[0]}" />
-		<span class="code" />
-		<span class="code" style="background-color:{colors[1]}" />
-		<span class="code" />
-		<span class="code" style="background-color:{colors[2]}" />
-		<span class="code" />
-		<span class="code" style="background-color:{colors[3]}" />
-		<span class="code" />
+	<div id="rotate">
+		<div />
+		<div id="resister">
+			<span class="code" />
+			<span class="code" style="background-color:{colors[0]}" />
+			<span class="code" />
+			<span class="code" style="background-color:{colors[1]}" />
+			<span class="code" />
+			<span class="code" style="background-color:{colors[2]}" />
+			<span class="code" />
+			<span class="code" style="background-color:{colors[3]}" />
+			<span class="code" />
+		</div>
+		<p>{ifNaN(numbers[0])}{ifNaN(numbers[1])}×10<sup>{ifNaN(numbers[2])}</sup></p>
 	</div>
-	<p>{ifNaN(numbers[0])}{ifNaN(numbers[1])}×10<sup>{ifNaN(numbers[2])}</sup></p>
 </section>
 
 <style>
@@ -83,25 +96,44 @@
 		height: min(60vh, 60vw);
 		margin: auto;
 		rotate: -5deg;
-		display: grid;
-		place-items: center;
+	}
+	p {
+		font-size: min(7.5vh, 7.5vw);
+		font-weight: bold;
 	}
 	.code {
 		display: inline-block;
 		background-color: bisque;
 	}
-	#resister {
+	#rotate {
 		rotate: 5deg;
+		width: 100%;
+		height: 100%;
+		display: grid;
+		place-items: center;
+	}
+	#resister {
 		display: grid;
 		width: 80%;
 		margin: auto;
 		border-radius: 12.5px;
 		overflow: hidden;
 		grid-template-columns: repeat(4, 1.5fr 1fr) 1.5fr;
-		height: 60%;
+		height: 90%;
 	}
 	#line {
 		border-bottom: 3px solid black;
 		margin-bottom: 10vh;
+		text-align: center;
+	}
+	#title {
+		display: inline-block;
+		font-size: 30px;
+		font-weight: bold;
+		border-radius: 2em;
+		padding: 0.5em;
+		background-color: red;
+		translate: 0 1.25em;
+		margin-bottom: 0;
 	}
 </style>
