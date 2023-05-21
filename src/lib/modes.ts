@@ -15,6 +15,3 @@ export const links = [
 ];
 
 export const mode = writable(0);
-mode.subscribe((value) => {
-  console.log(value);
-});

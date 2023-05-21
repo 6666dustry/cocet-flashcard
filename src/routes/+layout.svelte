@@ -43,6 +43,10 @@
 	h1 {
 		font-size: 100px;
 	}
+	header,
+	header * {
+		text-align: center;
+	}
 	#version {
 		font-size: 15px;
 	}
@@ -62,20 +66,50 @@
 		box-sizing: content-box;
 		align-items: unset;
 	}
-	span:active {
-		animation: shake 333ms;
-		animation-iteration-count: infinite;
+	@keyframes slide-top {
+		0% {
+			translate: 0px 0px;
+			opacity: 1;
+		}
+		75% {
+			translate: 0px -10px;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+	@keyframes slide-bottom {
+		0% {
+			translate: 0px 0px;
+			opacity: 1;
+		}
+		75% {
+			translate: 0px 10px;
+		}
+		100% {
+			opacity: 0;
+		}
 	}
 	.top {
+		animation: slide-top 800ms;
+		animation-iteration-count: infinite;
 		border-bottom-color: black;
 	}
 	.bottom {
+		animation: slide-bottom 800ms;
+		animation-iteration-count: infinite;
 		border-top-color: black;
 	}
 	.none.top {
+		animation: none;
 		border-bottom-color: gray;
 	}
 	.none.bottom {
+		animation: none;
 		border-top-color: gray;
+	}
+	span.none:active {
+		animation: shake 222ms;
+		animation-iteration-count: infinite;
 	}
 </style>

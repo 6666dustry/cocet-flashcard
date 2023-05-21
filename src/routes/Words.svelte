@@ -26,7 +26,9 @@
 			next.loaded = false;
 		}
 		try {
-			prev.data = (await import(`../assets/words/${min - division}-${max - division}.json`)).words;
+			const nmin = min - division,
+				nmax = max - division;
+			prev.data = (await import(`../assets/words/${nmin}-${nmax}.json`)).words;
 			prev.loaded = true;
 			return true;
 		} catch (error) {
