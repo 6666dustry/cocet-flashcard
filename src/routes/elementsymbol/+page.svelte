@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { playSound } from '$lib/sounds.js';
+	import { get_current_component } from 'svelte/internal';
 	import { elements, choice } from './elements.js';
 	const families = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
 	let answer = choice();
@@ -32,7 +33,6 @@
 		}
 	}}
 />
-<div id="horizontal"><span id="vertical" /></div>
 <table>
 	<thead>
 		<tr>
@@ -116,19 +116,6 @@
 	}
 	#name {
 		max-width: 4em;
-	}
-	#horizontal {
-		position: relative;
-		border-bottom: 7.5px solid darkgreen;
-	}
-	#vertical {
-		position: absolute;
-		top: -40vh;
-		left: 100px;
-		display: inline-block;
-		border-left: 7.5px solid darkblue;
-		width: 10px;
-		height: 120vh;
 	}
 	td:nth-child(2) {
 		--shadow-color: orange;
