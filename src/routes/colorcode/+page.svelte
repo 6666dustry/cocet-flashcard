@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { playSound } from '$lib/sounds.js';
+	import { object_without_properties } from 'svelte/internal';
 	import { makeCode } from './makecode.js';
 	import 'svelte/motion';
 	let { colors, value, values } = makeCode();
@@ -7,8 +8,18 @@
 	let numbers = [NaN, NaN, NaN];
 	let index = 0;
 	let minus = false;
+	let skipped = false;
 	function ifNaN(v: number) {
 		return isNaN(v) ? '□' : v.toString();
+	}
+	function skip() {
+		skipped = true;
+		setTimeout(() => {
+			({ colors, value, values } = makeCode());
+			numbers = [NaN, NaN, NaN];
+			index = 0;
+			skipped = false;
+		}, 750);
 	}
 </script>
 
@@ -26,6 +37,10 @@
 		}
 		if (!(index <= 0) && v.key === 'Backspace') {
 			numbers[--index] = NaN;
+		}
+		if (v.key === 'ArrowRight') {
+			skip();
+			return;
 		}
 		if ((numbers[0] * 10 + numbers[1]) * 10 ** numbers[2] === value) {
 			playSound(true);
@@ -71,21 +86,43 @@
 		]}</span
 	>
 </div>
-<section bind:this={section}>
+
+<!-- svelte-ignore a11y-click-events-have-key-events-->
+<section bind:this={section} on:click={skip}>
 	<div id="rotate">
 		<div />
 		<div id="resister">
 			<span class="code" />
-			<span class="code" style="background-color:{colors[0]}" />
+			<span
+				class="code"
+				class:white={colors[0].search(/(black)|(purple)|(brown)|(gray)|(blue)/) !== -1}
+				style="background-color:{colors[0]}">{skipped ? values[0] : ''}</span
+			>
 			<span class="code" />
-			<span class="code" style="background-color:{colors[1]}" />
+			<span
+				class="code"
+				class:white={colors[1].search(/(black)|(purple)|(brown)|(gray)|(blue)/) !== -1}
+				style="background-color:{colors[1]}">{skipped ? values[1] : ''}</span
+			>
 			<span class="code" />
-			<span class="code" style="background-color:{colors[2]}" />
+			<span
+				class="code"
+				class:white={colors[2].search(/(black)|(purple)|(brown)|(gray)|(blue)/) !== -1}
+				style="background-color:{colors[2]}"
+				>{#if skipped}
+					10<sup>{values[2].toExponential().slice(2).replace('+', '')}</sup>
+				{/if}</span
+			>
 			<span class="code" />
 			<span class="code" style="background-color:{colors[3]}" />
 			<span class="code" />
 		</div>
-		<p>{ifNaN(numbers[0])}{ifNaN(numbers[1])}×10<sup>{ifNaN(numbers[2])}</sup></p>
+		<p>
+			<span class:highlight={index === 0}>{ifNaN(numbers[0])}</span><span
+				class:highlight={index === 1}>{ifNaN(numbers[1])}</span
+			>×10
+			<sup class:highlight={index === 2}>{ifNaN(numbers[2])} </sup>
+		</p>
 	</div>
 </section>
 
@@ -104,6 +141,10 @@
 	.code {
 		display: inline-block;
 		background-color: bisque;
+		text-align: center;
+	}
+	.white {
+		color: white;
 	}
 	#rotate {
 		rotate: 5deg;
