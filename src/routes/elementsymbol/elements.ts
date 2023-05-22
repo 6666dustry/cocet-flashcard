@@ -33,7 +33,7 @@ export function choice() {
       result = names[Math.floor(Math.random() * (names.length - 1))];
       result = result[Math.floor(Math.random() * result.length)];
     }
-    if (result !== null && !result.includes("*")) {
+    if (result !== null && !result.includes("*") && result !== "ランタノイド" && result !== "アクチノイド") {
       return result;
     }
   }
