@@ -69,25 +69,21 @@
 	@keyframes slide-top {
 		0% {
 			translate: 0px 0px;
-			opacity: 1;
-		}
-		75% {
-			translate: 0px -10px;
+			opacity: 0;
 		}
 		100% {
-			opacity: 0;
+			translate: 0px -10px;
+			opacity: 1;
 		}
 	}
 	@keyframes slide-bottom {
 		0% {
 			translate: 0px 0px;
-			opacity: 1;
-		}
-		75% {
-			translate: 0px 10px;
+			opacity: 0;
 		}
 		100% {
-			opacity: 0;
+			opacity: 1;
+			translate: 0px 10px;
 		}
 	}
 	.top {
