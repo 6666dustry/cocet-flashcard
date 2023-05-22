@@ -14,6 +14,7 @@
 	}
 	function skip() {
 		skipped = true;
+		numbers = [values[0] / 10, values[1], Number(values[2].toExponential().slice(-2))];
 		setTimeout(() => {
 			({ colors, value, values } = makeCode());
 			numbers = [NaN, NaN, NaN];
