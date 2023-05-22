@@ -121,7 +121,7 @@
 			<span class:highlight={index === 0}>{ifNaN(numbers[0])}</span><span
 				class:highlight={index === 1}>{ifNaN(numbers[1])}</span
 			>×10
-			<sup class:highlight={index === 2}>{ifNaN(numbers[2])} </sup>
+			<sup class:highlight={index === 2}>{minus ? '-' : ''}{ifNaN(numbers[2])} </sup>
 		</p>
 	</div>
 </section>
