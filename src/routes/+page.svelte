@@ -61,6 +61,7 @@
 	<style>
 		html {
 			background-image: linear-gradient(0deg, rgb(76, 76, 196), rgb(177, 255, 177));
+			overflow-x: hidden;
 		}
 		* {
 			font-family: Impact, 'Dela Gothic One', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -87,6 +88,13 @@
 	{/key}
 </div>
 <Words />
+<div id="description">
+	<h2>使い方</h2>
+	<p>ただ英単語を入力するだけです。</p>
+	<p>
+		ちょっと上の数字が書かれているところの左右をクリックする事で出題範囲を変えれます。(ショートカットは左右矢印キー)
+	</p>
+</div>
 
 <style>
 	p {
@@ -102,5 +110,8 @@
 	}
 	#input {
 		min-height: 1em;
+	}
+	#description * {
+		font-size: 20px;
 	}
 </style>

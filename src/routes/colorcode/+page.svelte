@@ -117,7 +117,7 @@
 			<span class="code" style="background-color:{colors[3]}" />
 			<span class="code" />
 		</div>
-		<p>
+		<p id="display">
 			<span class:highlight={index === 0}>{ifNaN(numbers[0])}</span><span
 				class:highlight={index === 1}>{ifNaN(numbers[1])}</span
 			>×10
@@ -125,6 +125,13 @@
 		</p>
 	</div>
 </section>
+<div>
+	<h2>使い方</h2>
+	<p>カラーコードを読むのだ。</p>
+	<p>
+		もし読めなかったら中央のなんか傾いている四角を左クリックか、キーボードの右矢印を押せば問題をスキップできるぞい！
+	</p>
+</div>
 
 <style>
 	section {
@@ -134,10 +141,6 @@
 		margin: auto;
 		rotate: -5deg;
 	}
-	p {
-		font-size: min(7.5vh, 7.5vw);
-		font-weight: bold;
-	}
 	.code {
 		display: inline-block;
 		background-color: bisque;
@@ -145,6 +148,10 @@
 	}
 	.white {
 		color: white;
+	}
+	#display {
+		font-size: min(7.5vh, 7.5vw);
+		font-weight: bold;
 	}
 	#rotate {
 		rotate: 5deg;
