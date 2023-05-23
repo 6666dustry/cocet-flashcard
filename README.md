@@ -6,10 +6,13 @@
 
 ## 機能
 COCETフラッシュカード
+![COCETフラッシュカードの画像](images/cocet.jpeg)
 
 カラーコードフラッシュカード
+![カラーコードフラッシュカードの画像](images/colorcode.jpeg)
 
 元素記号フラッシュカード
+![元素記号フラッシュカードの画像](images/element.jpeg)
 
 ## 使い方:
 見りゃわかる
