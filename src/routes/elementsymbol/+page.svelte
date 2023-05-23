@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { playSound } from '$lib/sounds.js';
-	import { get_current_component } from 'svelte/internal';
 	import { elements, choice } from './elements.js';
 	const families = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
 	let answer = choice();
@@ -75,6 +74,24 @@
 					</td>{/each}</tr
 			>
 		{/each}
+		<tr class="description">
+			<td /><td id="alkali-metal">アルカリ金属</td><td id="alkali-earth-metal">アルカリ土類金属</td
+			><td id="transition" colspan="10">遷移元素</td>
+			<td id="base-metal" colspan="2">卑金属元素</td>
+			<td id="nonmetal" colspan="2">非金属元素</td>
+			<td id="halogen">ハロゲン</td><td id="gas">貴ガス</td>
+		</tr>
+		<tr class="description">
+			<td class="transparent" />
+			<td colspan="2" class="main-group">典型元素</td>
+			<td colspan="10" class="transparent" />
+			<td colspan="6" class="main-group">典型元素</td>
+		</tr>
+		<tr class="description">
+			<td class="transparent" />
+			<td colspan="13" id="metal">金属元素</td>
+			<td colspan="4" id="metalloid">半金属元素</td><td id="unknown">不明</td>
+		</tr>
 	</tbody>
 </table>
 <div>
@@ -95,12 +112,16 @@
 	span {
 		display: inline-block;
 	}
-	:where(td) {
+	:where(td),
+	#metal {
 		transition: scale 0.3s cubic-bezier(0.18, 1.35, 0.67, 1.59) 0s;
 		min-width: 3em;
 		border: 3px solid gray;
 		text-align: center;
 		background-color: lavender;
+	}
+	#metal {
+		border: none;
 	}
 	.none {
 		border: 1px dashed gray;
@@ -117,27 +138,69 @@
 	#name {
 		max-width: 4em;
 	}
-	td:nth-child(2) {
+	.transparent {
+		background: none !important;
+		border: none !important;
+	}
+	.description * {
+		background: none;
+		border-color: white;
+	}
+	@property --deg {
+		syntax: '<angle>'; /* <- defined as type number for the transition to work */
+		initial-value: 0deg;
+		inherits: false;
+	}
+	@keyframes move {
+		from {
+			--deg: 0deg;
+		}
+		to {
+			--deg: 360deg;
+		}
+	}
+	.main-group {
+		border-image: linear-gradient(
+				var(--deg),
+				hsl(0deg, 100%, 50%),
+				hsl(60deg, 100%, 50%),
+				hsl(120deg, 100%, 50%),
+				hsl(180deg, 100%, 50%),
+				hsl(240deg, 100%, 50%),
+				hsl(3000deg, 100%, 50%)
+			)
+			10;
+		animation: move 1s linear 0;
+		animation-iteration-count: infinite;
+	}
+	td:nth-child(2),
+	#alkali-metal {
 		--shadow-color: orange;
 		border-color: var(--shadow-color);
 	}
-	td:nth-child(3) {
+	td:nth-child(3),
+	#alkali-earth-metal {
 		--shadow-color: limegreen;
 		border-color: var(--shadow-color);
 	}
-	td:nth-child(n + 4) {
+	td:nth-child(n + 4),
+	#transition {
 		--shadow-color: blue;
 		border-color: var(--shadow-color);
 	}
-	td:nth-child(n + 14) {
+	td:nth-child(n + 14),
+	#base-metal {
 		--shadow-color: gold;
 		border-color: var(--shadow-color);
 	}
 	@for $i from 1 through 5 {
-		:where(tr:nth-child(#{$i})) > td:nth-child(n + #{max($i + 11,14)}) {
+		:where(tr:nth-child(#{$i})) > td:nth-child(n + #{max($i + 12,14)}) {
 			--shadow-color: gray;
 			border-color: var(--shadow-color);
 		}
+	}
+	#nonmetal {
+		border-color: gray;
 	}
 	@for $i from 2 through 6 {
 		:where(tr:nth-child(#{$i})) > td:nth-child(#{$i + 12}) {
@@ -149,16 +212,22 @@
 			background-color: lightcyan;
 		}
 	}
+	#metalloid {
+		background-color: lightcyan;
+		border: none;
+	}
 	@for $i from 1 through 6 {
 		:where(tr:nth-child(#{$i})) > td:nth-child(n + #{$i + 13}) {
 			background-color: white;
 		}
 	}
-	td:nth-child(18) {
+	td:nth-child(18),
+	#halogen {
 		--shadow-color: dodgerblue;
 		border-color: var(--shadow-color);
 	}
-	td:nth-child(19) {
+	td:nth-child(19),
+	#gas {
 		--shadow-color: lime;
 		border-color: var(--shadow-color);
 	}
@@ -183,5 +252,9 @@
 		td:nth-child(n + 16) {
 			background-color: cornsilk;
 		}
+	}
+	#unknown {
+		background-color: cornsilk;
+		border: none;
 	}
 </style>
