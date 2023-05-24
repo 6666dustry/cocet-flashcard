@@ -105,6 +105,11 @@
 </div>
 
 <style lang="scss">
+	@property --deg {
+		syntax: '<angle>'; /* <- defined as type number for the transition to work */
+		initial-value: 0deg;
+		inherits: false;
+	}
 	table {
 		margin: auto;
 		table-layout: fixed;
@@ -146,11 +151,6 @@
 		background: none;
 		border-color: white;
 	}
-	@property --deg {
-		syntax: '<angle>'; /* <- defined as type number for the transition to work */
-		initial-value: 0deg;
-		inherits: false;
-	}
 	@keyframes move {
 		from {
 			--deg: 0deg;
@@ -168,6 +168,17 @@
 				hsl(180deg, 100%, 50%),
 				hsl(240deg, 100%, 50%),
 				hsl(3000deg, 100%, 50%)
+			)
+			10;
+		animation: move 1.5s linear 0;
+		animation-iteration-count: infinite;
+	}
+	tbody td {
+		border-image: linear-gradient(
+				var(--deg),
+				var(--shadow-color) 40%,
+				white 60%,
+				var(--shadow-color)
 			)
 			10;
 		animation: move 1s linear 0;
