@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { playSound } from '$lib/sounds.js';
 	import { elements, choice } from './elements.js';
-	import { speakJapanese } from '$lib/utils/speak.js';
+	import speak, { speakJapanese } from '$lib/utils/speak.js';
 	const families = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
 	let answer = choice();
 	let value = '';
@@ -20,6 +20,7 @@
 		skipped = true;
 		value = answer;
 		setTimeout(() => {
+			speakJapanese(answer);
 			answer = choice();
 			value = '';
 			skipped = false;
@@ -61,7 +62,7 @@
 						<br />
 						{#if symbol.symbol === answer}
 							<!-- svelte-ignore a11y-autofocus-->
-							<input class:highlight={skipped} autofocus type="text" on:change={check} bind:value />
+							<input autofocus class:highlight={skipped} type="text" on:change={check} bind:value />
 						{:else}
 							<span id="symbol">{symbol.symbol ?? ''}</span>
 						{/if}
@@ -69,12 +70,12 @@
 						<br />
 						{#if symbol.name === answer}
 							<!-- svelte-ignore a11y-autofocus-->
-							<input class:highlight={skipped} autofocus type="text" on:change={check} bind:value />
+							<input autofocus class:highlight={skipped} type="text" on:change={check} bind:value />
 						{:else}
 							<span id="name">{symbol.name ?? ''}</span>
 						{/if}
-					</td>{/each}</tr
-			>
+					</td>{/each}
+			</tr>
 		{/each}
 		<tr class="description">
 			<td /><td id="alkali-metal">アルカリ金属</td><td id="alkali-earth-metal">アルカリ土類金属</td

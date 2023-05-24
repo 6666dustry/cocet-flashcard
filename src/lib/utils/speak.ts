@@ -20,7 +20,6 @@ export default function speak(word: string) {
 }
 export function speakJapanese(word: string) {
   const uttr = new SpeechSynthesisUtterance(word);
-  console.log(speechSynthesis.getVoices());
 
   // 言語を設定
   uttr.lang = "ja-JP";
