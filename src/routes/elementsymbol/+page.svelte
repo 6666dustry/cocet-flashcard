@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { playSound } from '$lib/sounds.js';
 	import { elements, choice } from './elements.js';
-	import speak, { speakJapanese } from '$lib/utils/speak.js';
+	import { speakJapanese } from '$lib/utils/speak.js';
 	const families = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
 	let answer = choice();
 	let value = '';
@@ -27,6 +27,14 @@
 		}, 750);
 	}
 </script>
+
+<svelte:head>
+	<style>
+		* {
+			font-family: cursive;
+		}
+	</style>
+</svelte:head>
 
 <svelte:window
 	on:keydown={(v) => {
@@ -163,29 +171,31 @@
 		}
 	}
 	.main-group {
-		border-image: linear-gradient(
-				var(--deg),
+		border-image: conic-gradient(
+				from var(--deg),
 				hsl(0deg, 100%, 50%),
 				hsl(60deg, 100%, 50%),
 				hsl(120deg, 100%, 50%),
 				hsl(180deg, 100%, 50%),
 				hsl(240deg, 100%, 50%),
-				hsl(3000deg, 100%, 50%)
+				hsl(300deg, 100%, 50%),
+				hsl(360deg, 100%, 50%)
 			)
-			10;
+			1;
 		animation: move 1.5s linear 0;
 		animation-iteration-count: infinite;
 	}
 	tbody td {
-		border-image: linear-gradient(
-				var(--deg),
-				var(--shadow-color) 40%,
-				white 60%,
-				var(--shadow-color)
+		border-image: conic-gradient(
+				from var(--deg, 0deg),
+				var(--shadow-color) 0deg,
+				white 10deg,
+				var(--shadow-color) 20deg 180deg,
+				white 190deg,
+				var(--shadow-color) 200deg
 			)
-			10;
-		animation: move 1s linear 0;
-		animation-iteration-count: infinite;
+			1;
+		animation: move 5s linear 0s infinite;
 	}
 	td:nth-child(2),
 	#alkali-metal {
