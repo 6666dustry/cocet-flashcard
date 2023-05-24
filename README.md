@@ -14,6 +14,22 @@ COCETフラッシュカード
 元素記号フラッシュカード
 ![元素記号フラッシュカードの画像](images/element.jpeg)
 
+## ダウンロード
+この右のCOCET FLASH CARD.......
+を左クリックして、
+![step1](images/step1.png)
+
+
+そうするとこの画面になるはずだから、
+![step2](images/step2.png)
+Windowsなら最後が
+.exeか.msi
+Linuxなら
+.AppImageか.deb
+そしてmacOSなら
+.dmg
+のファイルをダウンロードして実行すればok
+
 ## 使い方:
 見りゃわかる
 
