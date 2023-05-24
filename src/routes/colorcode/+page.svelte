@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { playSound } from '$lib/sounds.js';
-	import { object_without_properties } from 'svelte/internal';
 	import { makeCode } from './makecode.js';
 	import 'svelte/motion';
 	let { colors, value, values } = makeCode();
