@@ -28,7 +28,7 @@
 		function loop() {
 			const uttr = speak($words[index][word ? 'word' : 'translation'], {
 				lang: word ? 'en-US' : 'ja-JP',
-				pitch: 1.5
+				rate: 1.25
 			});
 			uttr.onend = () => {
 				word = !word;
@@ -68,7 +68,7 @@
 		function loop() {
 			const uttr = speak(allWords[index][word ? 'word' : 'translation'], {
 				lang: word ? 'en-US' : 'ja-JP',
-				pitch: 1.5
+				rate: 1.75
 			});
 			uttr.onend = () => {
 				word = !word;
