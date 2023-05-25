@@ -42,7 +42,47 @@
 			};
 		}
 		loop();
-	}}>ラジオ</button
+	}}>ラジオ(今の範囲だけ)</button
+>
+<button
+	on:click={async () => {
+		const allWords = (await import('../assets/words/1-200.json')).words;
+		let min = 201,
+			max = 400;
+		let can = true;
+		while (can) {
+			try {
+				allWords.concat((await import(`../assets/words/${min}-${max}.json`)).words);
+				min += 200;
+				max += 200;
+			} catch (error) {
+				can = false;
+			}
+		}
+
+		let index = 0;
+		let word = true;
+		/**
+		 * Infinity loop of speaking.
+		 */
+		function loop() {
+			const uttr = speak(allWords[index][word ? 'word' : 'translation'], {
+				lang: word ? 'en-US' : 'ja-JP',
+				pitch: 1.5
+			});
+			uttr.onend = () => {
+				word = !word;
+				if (word) {
+					index++;
+					if (index >= allWords.length) {
+						index = 0;
+					}
+				}
+				loop();
+			};
+		}
+		loop();
+	}}>ラジオ(全部)</button
 >
 <Short />
 <Words />
