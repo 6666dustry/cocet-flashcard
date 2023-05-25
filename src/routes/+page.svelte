@@ -76,7 +76,8 @@
 		let word = true;
 		function loop() {
 			const uttr = speak($words[index][word ? 'word' : 'translation'], {
-				lang: word ? 'en-US' : 'ja-JP'
+				lang: word ? 'en-US' : 'ja-JP',
+				pitch: 1.5
 			});
 			uttr.onend = () => {
 				word = !word;
