@@ -26,7 +26,7 @@
 		 * Infinity loop of speaking.
 		 */
 		function loop() {
-			const uttr = speak($words[index][word ? 'word' : 'translation'], {
+			const uttr = speak($words[index][word ? 'word' : 'translation'].replaceAll('、', ','), {
 				lang: word ? 'en-US' : 'ja-JP',
 				rate: 1.25
 			});
@@ -66,7 +66,7 @@
 		 * Infinity loop of speaking.
 		 */
 		function loop() {
-			const uttr = speak(allWords[index][word ? 'word' : 'translation'], {
+			const uttr = speak(allWords[index][word ? 'word' : 'translation'].replaceAll('、', ','), {
 				lang: word ? 'en-US' : 'ja-JP',
 				rate: 1.75
 			});
