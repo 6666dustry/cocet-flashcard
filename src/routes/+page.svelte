@@ -82,6 +82,9 @@
 				word = !word;
 				if (word) {
 					index++;
+					if (index >= $words.length) {
+						index = 0;
+					}
 				}
 				loop();
 			};
