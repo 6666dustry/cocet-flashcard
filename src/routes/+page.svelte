@@ -70,6 +70,25 @@
 		}
 	</style>
 </svelte:head>
+<button
+	on:click={() => {
+		let index = 0;
+		let word = true;
+		function loop() {
+			const uttr = speak($words[index][word ? 'word' : 'translation'], {
+				lang: word ? 'en-US' : 'ja-JP'
+			});
+			uttr.onend = () => {
+				word = !word;
+				if (word) {
+					index++;
+				}
+				loop();
+			};
+		}
+		loop();
+	}}>ラジオ</button
+>
 <div>
 	<p id="time">
 		{perKey}{' '}key/s {missCount}

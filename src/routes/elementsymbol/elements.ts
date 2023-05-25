@@ -1,3 +1,4 @@
+import { shuffle } from '$lib/utils/shuffle.js';
 import { symbols, names } from './elements.json';
 
 let number = 0;
@@ -21,18 +22,20 @@ export const elements = symbols.map((v, i) => {
     };
   });
 });
+let shuffled = shuffle(names.slice(0, 6).flat().concat(symbols.slice(0, 6).flat())), index = 0;
+/**
+ * 
+ * @returns returns random element name/symbol .
+ */
 export function choice() {
   // eslint-disable-next-line no-constant-condition
   while (true) {
-    let result = null;
-    const a = Math.random() > 0.5;
-    if (a) {
-      result = symbols[Math.floor(Math.random() * (symbols.length - 1))];
-      result = result[Math.floor(Math.random() * result.length)];
-    } else {
-      result = names[Math.floor(Math.random() * (names.length - 1))];
-      result = result[Math.floor(Math.random() * result.length)];
+    if (index >= shuffled.length) {
+      shuffled = shuffle(names.flat().concat(symbols.flat()));
+      index = 0;
     }
+    const result = shuffled[index++];
+
     if (result !== null && !result.includes("*") && result !== "ランタノイド" && result !== "アクチノイド") {
       return result;
     }
