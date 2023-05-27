@@ -21,5 +21,5 @@
 			{ lang: 'ja-JP', loop: true }
 		);
 	}}
-	>ラジオ
+	>聞き流し
 </button>

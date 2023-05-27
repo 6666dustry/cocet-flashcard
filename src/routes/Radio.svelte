@@ -27,7 +27,7 @@
 			};
 		}
 		loop();
-	}}>ラジオ(今の範囲だけ)</button
+	}}>聞き流し(今の範囲だけ)</button
 >
 <button
 	on:click={async () => {
@@ -67,7 +67,7 @@
 			};
 		}
 		loop();
-	}}>ラジオ(全部)</button
+	}}>聞き流し(全部)</button
 >
 
 <style>

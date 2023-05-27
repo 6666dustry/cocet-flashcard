@@ -9,6 +9,7 @@ import w4 from "../assets/sounds/wrong/4.mp3";
 import w5 from "../assets/sounds/wrong/5.mp3";
 const corrects = [c1, c2, c3, c4].map(x => new Audio(x));
 const wrongs = [w1, w2, w3, w4, w5].map(x => new Audio(x));
+const ctx = new AudioContext();
 
 export function playSound(correct: boolean) {
   let play;
@@ -17,5 +18,7 @@ export function playSound(correct: boolean) {
   } else {
     play = wrongs[Math.floor(Math.random() * wrongs.length)];
   }
+  corrects.forEach(x => { x.pause(); x.currentTime = 0; });
+  wrongs.forEach(x => { x.pause(); x.currentTime = 0; });
   play.play();
 }

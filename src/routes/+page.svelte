@@ -45,4 +45,9 @@
 	#description * {
 		font-size: 20px;
 	}
+	select,
+	label,
+	select > option {
+		font-size: 20px;
+	}
 </style>
