@@ -2,6 +2,9 @@
 	import Words from './Words.svelte';
 	import Short from './Short.svelte';
 	import Radio from './Radio.svelte';
+	import LongHard from './LongHard.svelte';
+	import Long from './Long.svelte';
+	let elem = Short;
 </script>
 
 <svelte:head>
@@ -17,8 +20,15 @@
 		}
 	</style>
 </svelte:head>
-<Short />
+<svelte:component this={elem} />
 <Radio />
+<br />
+<label for="mode">モード</label>
+<select bind:value={elem} name="mode" id="mode">
+	<option value={Short}>英単語</option>
+	<option value={Long}>英文</option>
+	<option value={LongHard}>英文(日本語訳のみ)</option>
+</select>
 <Words />
 <div id="description">
 	<h2>使い方</h2>
