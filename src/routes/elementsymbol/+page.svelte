@@ -2,6 +2,8 @@
 	import { playSound } from '$lib/sounds.js';
 	import { elements, choice } from './elements.js';
 	import speak from '$lib/utils/speak.js';
+	import Description from './Description.svelte';
+	import Radio from './Radio.svelte';
 	const families = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
 	let answer = choice();
 	let value = '';
@@ -43,26 +45,7 @@
 		}
 	}}
 />
-<button
-	on:click={() => {
-		speak(
-			elements
-				.map((v) => {
-					return v
-						.map((value) => {
-							if (!value.name) {
-								return '';
-							}
-							return `${value.name}、${value.symbol}。`;
-						})
-						.join('');
-				})
-				.join(''),
-			{ lang: 'ja-JP', loop: true }
-		);
-	}}
-	>ラジオ
-</button>
+<Radio />
 <table>
 	<thead>
 		<tr>
@@ -125,15 +108,7 @@
 		</tr>
 	</tbody>
 </table>
-<div>
-	<h2>使い方</h2>
-	<p>
-		元素記号、元素名の内どれか一つが消されるので後は答えるだけです。もちろん答えられますよね？？
-	</p>
-	<p>
-		キーボードの右矢印かポップアップをクリックで問題をスキップできます。でももちろんあなたは使いませんよね？？
-	</p>
-</div>
+<Description />
 
 <style lang="scss">
 	@property --deg {
