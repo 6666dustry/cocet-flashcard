@@ -4,7 +4,7 @@
 	import '../common.css';
 	let text: string;
 	$: text = Math.random() < 0.1 ? modes[$mode].toLowerCase() : modes[$mode];
-	let version = '2.1.0';
+	let version = '2.2.0';
 </script>
 
 <header>
