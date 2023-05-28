@@ -21,7 +21,6 @@
 	</style>
 </svelte:head>
 <svelte:component this={elem} />
-<Radio />
 <br />
 <label for="mode">モード</label>
 <select bind:value={elem} name="mode" id="mode">
@@ -30,6 +29,7 @@
 	<option value={LongHard}>英文(日本語訳のみ)</option>
 </select>
 <Words />
+<Radio />
 <div id="description">
 	<h2>使い方</h2>
 	<p>ただ英単語を入力するだけです。</p>
@@ -47,7 +47,8 @@
 	}
 	select,
 	label,
-	select > option {
+	select option {
 		font-size: 20px;
+		background: none;
 	}
 </style>
