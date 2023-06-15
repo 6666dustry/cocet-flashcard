@@ -4,6 +4,7 @@
 	import Radio from './Radio.svelte';
 	import LongHard from './LongHard.svelte';
 	import Long from './Long.svelte';
+	import Gear from './Gear.svelte';
 	let elem = Short;
 </script>
 
@@ -21,6 +22,7 @@
 	</style>
 </svelte:head>
 <svelte:component this={elem} />
+<Gear />
 <br />
 <label for="mode">モード</label>
 <select bind:value={elem} name="mode" id="mode">
